@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملابس سعيد</title>
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+            direction: rtl;
+        }
+
+        header {
+            background-color: #4b2e39;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #daa520;
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+
+        #home {
+            background-color: #5c3a4c;
+            color: #ecf0f1;
+            padding: 4em 2em;
+            border-radius: 10px;
+            margin: 2em auto;
+            max-width: 80%;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .product {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 220px;
+            background-color: #fff;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product h3, .product p {
+            margin: 10px 0;
+            color: #4b2e39;
+        }
+
+        .product:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .whatsapp-contact {
+            color: #25d366;
+            font-size: 1.2em;
+            margin-top: 1em;
+        }
+
+        .whatsapp-contact a {
+            color: #fff;
+            text-decoration: none;
+            background-color: #25d366;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .whatsapp-contact a:hover {
+            background-color: #1ebd57;
+        }
+
+        footer {
+            background-color: #4b2e39;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ملابس سعيد</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">الصفحة الرئيسية</a></li>
+                <li><a href="#products">المنتجات</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>مرحبًا بكم في ملابس سعيد</h2>
+        <p>متجرك الشامل لأحدث صيحات الموضة.</p>
+    </section>
+    <section id="products">
+        <h2>منتجاتنا</h2>
+        <div class="product visible">
+            <img src="product1.jpg" alt="منتج 1">
+            <h3>منتج 1</h3>
+            <p>200 درهم</p>
+        </div>
+        <div class="product visible">
+            <img src="product2.jpg" alt="منتج 2">
+            <h3>منتج 2</h3>
+            <p>250 درهم</p>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+    <section id="about">
+        <h2>من نحن</h2>
+        <p>ملابس سعيد  تهتم بتقديم ملابس عالية الجودة بأسعار معقولة.</p>
+    </section>
+    <section id="contact">
+        <h2>اتصل بنا</h2>
+        <p class="whatsapp-contact">واتساب: <a href="https://wa.me/212669821320" target="_blank">+212 669-821320</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2025 ملابس سعيد. جميع الحقوق محفوظة.</p>
+    </footer>
+    
+</body>
+</html>
